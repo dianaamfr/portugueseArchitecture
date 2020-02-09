@@ -1,0 +1,2234 @@
+/*FONTES*/
+/*Fonte normal*/
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/pt-serif/PTF55F.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/pt-serif/PTF56F.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/pt-serif/PTF75F.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/pt-serif/PTF76F.ttf);
+    font-weight: 400;
+}
+
+/*Fonte não serifada*/
+@font-face {
+    font-family: fonte2;
+    src: url(fontes/roboto/Roboto-Regular.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url(fontes/roboto/Roboto-Medium.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url(fontes/roboto/RobotoCondensed-Bold.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url(fontes/roboto/Roboto-Light.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url(fontes/roboto/Roboto-LightItalic.ttf);
+    font-weight: 500;
+}
+
+/*GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*BODY*/
+body {
+    width: 100%;
+}
+
+/*MÁXIMO DE 1300PX*/
+#tudo {
+    width: 100%;
+    margin: auto;
+    max-width: 1300px;
+}
+
+/*BARRA DE NAVEGACAO RESPONSIVE*/
+#iconmenu {
+    display: none;
+}
+
+#menuresponsive {
+    display: none;
+}
+
+/*BARRA NAVEGACAO*/
+nav {
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 1300px;
+    background-color: #ff8A84;
+    height: 30px;
+    margin-right: 30px;
+    z-index: 4;
+}
+
+nav > ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+nav > ul > li {
+    text-decoration: none;
+    float: left;
+    background-color: #ff8A84;
+    margin-right: 10px;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    font-family: fonte2;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+li a:hover {
+    color: #000;
+}
+
+/*DROPDOWN*/
+nav ul ul {
+    display: none;
+    list-style-type: none;
+    margin-top: 10px;
+    line-height: 17px;
+}
+
+nav ul ul li {
+    padding: 7px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+#li1:hover #li1a{
+    color: black;
+}
+
+#li2:hover #li2a{
+    color: black;
+}
+
+/*CAPA*/
+#capa {
+    background-image: url(imagens/capa1.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+    height: 95vh;
+    position: relative;
+}
+
+#titulo {
+    color: #fff;
+    font-family: fonte2;
+    font-size: 17px;
+    margin-left: 30px;
+    line-height: 28px;
+    font-weight: 200;
+    float: left;
+}
+
+#titulo span {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#quote {
+    margin-top: 23%;
+}
+
+#citacao {
+    margin-left: 230px;
+    font-family: fonte1;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#autor {
+    margin-top: 4%;
+    font-family: fonte2;
+    font-weight: 100;
+    font-size: 16px;
+    margin-left: 230px;
+    width: 550px;
+    display: inline-block;
+    text-align: right;
+}
+
+/*GERAIS TITULOS E PARAGRAFOS*/
+.linksetas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 50px;
+    bottom: 5%;
+    position: absolute;
+}
+
+.seta {
+    width: 100%;
+    display: block;
+}
+
+.linksetas2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+h1 {
+    font-family: fonte1;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+h2 {
+    font-family: fonte2;
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 11px;
+}
+
+h3 {
+    font-family: fonte2;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    font-family: fonte2;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.top {
+    position: relative;
+    top: -30px;
+    display: block;
+    height: 0;
+    width: 0;
+}
+
+/*INTRODUCAO*/
+#introducao {
+    padding-top: 70px;
+    padding-bottom: 150px;
+}
+
+.destaqueleve {
+    width: 590px;
+    text-align: center;
+    line-height: 20px;
+    margin: auto;
+    padding-top: 45px;
+    margin-bottom: 40px;
+}
+
+.colunasleveslimite {
+    width: 590px;
+    margin: auto;
+}
+
+.fichatecnica {
+    display: none;
+}
+
+.colunasleves {
+    overflow: auto;
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
+    /* Firefox */
+    column-gap: 40px;
+}
+
+.colunasleves p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*CAIXA VAZIA COM FUNDO FIXO*/
+.vazio {
+    height: 200px;
+    background-image: url(imagens/capa1.jpg);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/*INCICIO*/
+#ancorainicio {
+    top: -20px;
+}
+
+#inicio {
+    padding-top: 70px;
+    overflow: auto;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+#h2centro {
+    text-align: center;
+}
+
+.destaque {
+    padding-top: 45px;
+    font-weight: 200;
+    text-align: center;
+    width: 590px;
+    margin: auto;
+}
+
+#p2inicio {
+    width: 600px;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*TIMELINE*/
+table {
+    display: none;
+}
+
+#tabela2 {
+    display: none;
+}
+
+#timeline {
+    background-image: url(imagens/timeline.png);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 750px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.li2 {
+    display: inline-block;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.bolinha {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#b4:hover {
+    transform: scale(1.3,1.3);
+}
+
+#b5:hover {
+    transform: scale(1.3,1.3);
+}
+
+#b6:hover {
+    transform: scale(1.3,1.3);
+}
+
+#infotimelinetodos {
+    display: block;
+    text-align: center;
+}
+
+.infotimeline {
+    display: inline-block;
+    vertical-align: top;
+    width: 115px;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 5px;
+}
+
+/*CATEGORIAS E GERACOES*/
+#ceg {
+    padding-top: 70px;
+    padding-bottom: 150px;
+}
+
+#colunasceg {
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow: auto;
+}
+
+#tituloceg {
+    margin-bottom: 40px;
+}
+
+.ceg {
+    margin-bottom: 40px;
+}
+
+/*CATEGORIAS*/
+#coluna1 {
+    float: left;
+    width: 47%;
+}
+
+/*GERACOES*/
+#coluna2 {
+    width: 47%;
+    float: right;
+}
+
+#arquitetosgeracoes {
+    font-weight: 500;
+}
+
+/*SIZA*/
+#siza {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 0;
+}
+
+.tituloarquitetos {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/*PREMIOS SIZA*/
+.titulopremios {
+    display: none;
+}
+
+.premiosreponsive {
+    display: none;
+}
+
+.premiossizatudo {
+    position: absolute;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    -moz-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    width: 93%;
+    text-align: center;
+    z-index: 1;
+    top: 50px;
+    right: 3%;
+    left: 3%;
+    height: 210px;
+    display: none;
+}
+
+.premiossiza {
+    display: inline-block;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: fonte2;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 3px;
+    margin-top: 100px;
+    color: #ff8a84;
+}
+
+.premiossiza:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+#iconsiza {
+    width: 35px;
+    margin-left: 8%;
+    background-color: #ff8a84;
+    margin-bottom: -40px;
+    z-index: 3;
+    position: relative;
+}
+
+#iconsiza:hover {
+    cursor: pointer;
+    background-color: #000;
+}
+
+.prsiza {
+    display: none;
+}
+
+#prsiza1 {
+    display: block;
+}
+
+.premio {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/*3 COLUNAS*/
+#colunassiza {
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: 250px;
+}
+
+/*BIOGRAFIA SIZA*/
+.coluna1arquitetos {
+    width: 33%;
+    float: left;
+    text-align: left;
+}
+
+#biosiza1 {
+    display: block;
+}
+
+#biosiza2 {
+    display: none;
+}
+
+#biosiza3 {
+    display: none;
+}
+
+/*IMAGEM SIZA*/
+.imgcircular {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.imgcircular2 {
+    width: 135px;
+    border-radius: 50%;
+    margin: auto;
+    display: none;
+}
+
+/*OBRA SIZA*/
+.coluna3arquitetos {
+    width: 33%;
+    float: right;
+    text-align: left;
+}
+
+.parquitetos {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/*PAGINAS e BOTOES BIO*/
+#botoestodos {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.botoesbio {
+    display: inline-block;
+    color: #ff8a84;
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+.botoesbio:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.pagbio {
+    display: none;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#pagbio1 {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/*PAGINAS e BOTOES OBRA*/
+.filabotoes {
+    margin-left: 8%;
+    margin-right: 8%;
+    overflow: auto;
+    width: 84%;
+}
+
+.botoesesq {
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+.botoesesq2 {
+    display: none;
+}
+
+.botoesdir {
+    text-align: center;
+    width: 33%;
+    float: right;
+}
+
+.botoesdir2 {
+    display: none;
+}
+
+.botoesobra {
+    display: inline-block;
+    color: #ff8a84;
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+.botoesobra:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.pagobra {
+    display: none;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#pagobra1 {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/*SERRALVES*/
+/*FUNDO SERRALVES*/
+#ancoraserralves {
+    margin-bottom: -50px;
+}
+
+#serralves {
+    background-image: url(imagens/museu_serralves.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    overflow: auto;
+    padding-top: 60px;
+    margin-top: 50px;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 0;
+}
+
+#ftserralvesicon {
+    display: block;
+    width: 100px;
+    height: 22px;
+    text-align: center;
+    border: 2px solid #fff;
+    font-family: fonte2;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    margin-left: 8%;
+    z-index: 3;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    top: 40px;
+}
+
+#ftserralvesicon:hover {
+    border: 2px solid #000;
+    color: #000;
+    cursor: pointer;
+}
+
+#ftserralves {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    -moz-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    width: 20%;
+    top: 150px;
+    height: auto;
+    left: 30px;
+    padding: 10px;
+    display: none;
+}
+
+/*CONTEUDO SERRALVES*/
+/*MENU TEXTOS SERRALVES*/
+.listaserralves {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.listaserralves div {
+    display: inline-block;
+}
+
+.pagser {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
+    /* Firefox */
+    column-gap: 40px;
+    display: none;
+    height: 200px;
+}
+
+.pagser p {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#pagser1 {
+    display: block;
+}
+
+.botoesser {
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1px solid #fff;
+    font-family: fonte2;
+    font-size: 11px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 3px;
+}
+
+.botoesser:hover {
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+}
+
+.selected2 {
+    border: 1px solid #000 !important;
+    color: #000 !important;
+}
+
+.selected {
+    color: #000 !important;
+}
+
+/*SOUTO MOURA*/
+#soutomoura {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    z-index: 0;
+    position: relative;
+}
+
+/*PREMIOS SOUTO MOURA*/
+.premiossmtudo {
+    position: absolute;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    -moz-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    z-index: 1;
+    top: 35px;
+    right: 3%;
+    left: 3%;
+    height: 160px;
+    display: none;
+}
+
+.premiossm {
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: fonte2;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 3px;
+    margin-top: 90px;
+    color: #ff8a84;
+}
+
+.premiossm:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+#iconsm {
+    width: 35px;
+    margin-left: 8%;
+    background-color: #ff8a84;
+    margin-bottom: -40px;
+    z-index: 3;
+    position: relative;
+}
+
+#iconsm:hover {
+    cursor: pointer;
+    background-color: #000;
+}
+
+.prsm {
+    display: none;
+}
+
+#prsm1 {
+    display: block;
+}
+
+#colunassm {
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: 260px;
+}
+
+/*Botoes e pag souto moura*/
+.botoescar:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.botoescar {
+    display: inline-block;
+    color: #ff8a84;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.pagcar {
+    display: none;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#pagcar1 {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.botoeslin {
+    display: inline-block;
+    color: #ff8a84;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.botoeslin:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.paglin {
+    display: none;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#paglin1 {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/*CASA DAS HISTORIAS*/
+/*FUNDO CASA DAS HISTORIAS*/
+#ancoracasahistorias {
+    top: -10px;
+}
+
+#casahistorias {
+    background-image: url(imagens/casa_das_historias.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 150px;
+    padding-top: 10px;
+}
+
+#casahistoriasconteudo {
+    padding-top: 40px;
+    position: relative;
+}
+
+/*ficha tecnica casa das historias*/
+#ftcasahisticon {
+    display: block;
+    width: 100px;
+    height: 22px;
+    text-align: center;
+    border: 2px solid #fff;
+    font-family: fonte2;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    margin-left: 8%;
+    z-index: 3;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    top: 90px;
+}
+
+#ftcasahisticon:hover {
+    border: 2px solid #000;
+    color: #000;
+    cursor: pointer;
+}
+
+#ftcasahist {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    -moz-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    width: 20%;
+    top: 150px;
+    height: auto;
+    left: 30px;
+    padding: 10px;
+    display: none;
+}
+
+.h4 {
+    font-family: fonte2;
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+}
+
+#ftcasahist p {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/*JOAO CARRILHO*/
+#carrilho {
+    padding-top: 50px;
+    overflow: auto;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 0;
+}
+
+#colunascarrilho {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    overflow: auto;
+}
+
+/*PREMIOS CARRILHO*/
+.premioscarrilhotudo {
+    position: absolute;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    -moz-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    padding: 35px;
+    width: 90%;
+    text-align: center;
+    z-index: 1;
+    top: 30px;
+    right: 3%;
+    left: 3%;
+    height: 140px;
+    display: none;
+}
+
+.premioscarrilho {
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: fonte2;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 3px;
+    margin-top: 80px;
+    color: #ff8a84;
+}
+
+.premioscarrilho:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+#iconcarrilho {
+    width: 35px;
+    margin-left: 8%;
+    background-color: #ff8a84;
+    margin-bottom: -40px;
+    z-index: 3;
+    position: relative;
+}
+
+#iconcarrilho:hover {
+    cursor: pointer;
+    background-color: #000;
+}
+
+.prcarrilho {
+    display: none;
+}
+
+#prcarrilho1 {
+    display: block;
+}
+
+/*MERCADO MUNICIPAL*/
+#mercado {
+    background-image: url(imagens/mercado_municipal.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 50px;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 150px;
+    padding-top: 10px;
+}
+
+#mercadoconteudo {
+    padding-top: 40px;
+    position: relative;
+}
+
+/*ficha tecnica mercado*/
+#ftmercadoicon {
+    display: block;
+    width: 100px;
+    height: 22px;
+    text-align: center;
+    border: 2px solid #fff;
+    font-family: fonte2;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    margin-left: 8%;
+    z-index: 3;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    top: 90px;
+}
+
+#ftmercadoicon:hover {
+    border: 2px solid #000;
+    color: #000;
+    cursor: pointer;
+}
+
+#ftmercado {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    -moz-box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    box-shadow: 0 0 11px 0 rgba(143,137,143,0.32);
+    width: 20%;
+    top: 150px;
+    height: auto;
+    left: 30px;
+    padding: 10px;
+    display: none;
+}
+
+#ftmercado p {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/*MENU MERCADO*/
+.listamercado {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/*BOTOES e PAG MERCADO*/
+.pagmer {
+    overflow: auto;
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
+    /* Firefox */
+    column-gap: 40px;
+    display: none;
+    height: 180px;
+}
+
+.pagmer p {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#pagmer1 {
+    display: block;
+}
+
+.botoesmer {
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1px solid #fff;
+    font-family: fonte2;
+    font-size: 11px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 3px;
+}
+
+.botoesmer:hover {
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+}
+
+.coluna1leve p {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.coluna2leve p {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    height: 70px;
+}
+
+#quotefooter {
+    font-family: fonte1;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#quotefim {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 30px;
+    display: inline-block;
+    border: 2px solid #ff8a84;
+    padding: 5px;
+    color: #ff8a84;
+    text-transform: none;
+}
+
+#quotefim:hover {
+    color: #000;
+    border: 2px solid #000;
+}
+
+#assinatura {
+    text-align: right;
+    margin-right: 50px;
+}
+
+@media (max-width:1200px) {
+    #ftcasahisticon {
+        display: none;
+    }
+
+    #ftserralvesicon {
+        display: none;
+    }
+
+    #ftmercadoicon {
+        display: none;
+    }
+
+    .fichatecnica {
+        display: block;
+        margin-top: 0;
+        padding-top: 10px;
+    }
+
+    .subtitulotabela {
+        font-family: fonte2;
+        font-size: 13px;
+        font-weight: 200;
+        width: 25%;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .fichatecnica tr {
+        height: 25px;
+    }
+
+    .fichatecnica td {
+        vertical-align: top;
+    }
+
+    .infotabela {
+        font-family: fonte2;
+        font-size: 13px;
+        font-weight: 100;
+        padding-right: 20px;
+    }
+}
+
+/*Media w1000*/
+@media (max-width:1000px) {
+    /*Barra navegacao*/
+    nav ul {
+        display: none;
+    }
+
+    #iconmenu {
+        right: 30px;
+        padding: 15px;
+        top: -1px;
+        position: fixed;
+        display: block;
+    }
+
+    .linhamenu {
+        display: block;
+        margin: auto;
+        width: 22px;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        border-radius: 2px;
+    }
+
+    #menuresponsive {
+        height: 100vh;
+        width: 100%;
+        transition: .5s;
+        padding-top: 60px;
+        text-align: center;
+        background-color: #000;
+        position: fixed;
+        opacity: .97;
+        top: 0;
+        z-index: 3;
+    }
+
+    #menuresponsive > ul {
+        padding: 10vh;
+        display: inline-block;
+    }
+
+    #menuresponsive li {
+        list-style-type: none;
+    }
+
+    #menuresponsive ul li:hover {
+        cursor: pointer;
+    }
+
+    #menuresponsive a {
+        padding: 15px 8px 8px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: inline-block;
+        transition: .3s;
+    }
+
+    #menuresponsive ul ul {
+        display: none;
+    }
+
+    #menuresponsive ul ul li a {
+        color: #fff;
+    }
+
+    li a:hover {
+        color: #ff8a84;
+    }
+
+    .selected3 {
+        color: #ff8a84 !important;
+    }
+
+    #menuresponsive a:hover {
+        color: #ff8a84 !important;
+    }
+
+    .menuactive {
+        background-color: #000;
+    }
+
+    /*Capa*/
+    #capa {
+        background-image: url(imagens/capa2.jpg);
+    }
+
+    .vazio {
+        background-image: url(imagens/capa2.jpg);
+    }
+
+    #quote {
+        width: 548px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #citacao {
+        margin-left: 0;
+        margin: auto;
+        display: inline-block;
+    }
+
+    #autor {
+        float: right;
+    }
+
+    #p2inicio {
+        width: 92%;
+    }
+
+    /*Ceg*/
+    #colunasceg {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /*Siza*/
+    #iconsiza {
+        margin-left: 4%;
+    }
+
+    .colunasleveslimite {
+        width: 92%;
+        margin: auto;
+        margin-top: 30px;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    #colunassiza {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .filabotoes {
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 92%;
+    }
+
+    /*Serralves*/
+    .botoesser {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 5px;
+    }
+
+    /*Souto Moura*/
+    #colunassm {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #iconsm {
+        margin-left: 4%;
+    }
+
+    /*Casa Hist*/
+    #ftcasahisticon {
+        margin-left: 4%;
+    }
+
+    #ftcasahisticon {
+        margin-left: 4%;
+    }
+
+    #ftserralvesicon {
+        margin-left: 4%;
+    }
+
+    /*Carrilho*/
+    #colunascarrilho {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #iconcarrilho {
+        margin-left: 4%;
+    }
+
+    #hide {
+        display: none;
+    }
+
+    /*Mercado*/
+    .botoesmer {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 5px;
+    }
+
+    #ftmercadoicon {
+        margin-left: 4%;
+    }
+}
+
+/*Media w910*/
+@media (max-width:910px) {
+    #capa {
+        max-height: 500px;
+    }
+
+    .linksetas2 {
+        display: none;
+    }
+
+    #introducao {
+        height: auto;
+        padding-bottom: 70px;
+    }
+
+    #inicio {
+        padding-bottom: 70px;
+    }
+
+    #ceg {
+        padding-bottom: 70px;
+    }
+
+    #siza {
+        padding-bottom: 70px;
+    }
+
+    #serralves {
+        padding-bottom: 70px;
+    }
+
+    #soutomoura {
+        padding-bottom: 70px;
+    }
+
+    #casahistorias {
+        padding-bottom: 70px;
+    }
+
+    #carrilho {
+        padding-bottom: 70px;
+    }
+
+    #mercado {
+        padding-bottom: 70px;
+    }
+
+    .imgcircular {
+        width: 160px;
+        margin-top: 20px;
+    }
+
+    #colunasiza {
+        height: 300px;
+    }
+
+    .vazio {
+        height: 150px;
+    }
+}
+
+/*Media w800*/
+@media (max-width:800px) {
+    #capa {
+        max-height: 450px;
+    }
+
+    #serralves {
+        background-attachment: scroll;
+    }
+
+    #casahistorias {
+        background-attachment: scroll;
+    }
+
+    #mercado {
+        background-attachment: scroll;
+    }
+
+    .vazio {
+        background-attachment: scroll;
+    }
+
+    #quote {
+        margin-top: 190px;
+        width: 418px;
+    }
+
+    #citacao {
+        font-size: 23px;
+    }
+
+    #autor {
+        font-size: 14px;
+    }
+
+    .imgcircular {
+        display: none;
+    }
+
+    .imgcircular2 {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .botoesesq {
+        width: 50%;
+    }
+
+    .botoesdir {
+        width: 50%;
+    }
+
+    .coluna1arquitetos {
+        width: 47%;
+        height: 250px;
+    }
+
+    .coluna3arquitetos {
+        width: 47%;
+        height: 250px;
+    }
+
+    #timeline {
+        background-size: 550px;
+    }
+
+    .infotimeline {
+        width: 75px;
+    }
+
+    .li2 {
+        display: inline-block;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #iconsiza {
+        display: none;
+    }
+
+    #iconsm {
+        display: none;
+    }
+
+    #iconcarrilho {
+        display: none;
+    }
+
+    .premiosresponsive {
+        display: block;
+        margin-top: 50px;
+        padding-top: 10px;
+        text-align: left;
+        background-color: #fff;
+        width: 92%;
+        margin: auto;
+    }
+
+    .titulopremios {
+        display: block;
+        margin-left: 4%;
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .premiosresponsive td {
+        vertical-align: top;
+        line-height: 22px;
+    }
+
+    .premiosresponsive tr {
+        height: 35px;
+    }
+
+    .textotabela {
+        font-family: fonte2;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .datatabela {
+        font-family: fonte2;
+        font-size: 13px;
+        font-weight: 100;
+        color: #ff8a84;
+        padding-right: 10px;
+        vertical-align: top;
+    }
+
+    .premiosreponsive td {
+        padding-bottom: 10px;
+    }
+
+    #botoespremiosreponsive {
+        margin-bottom: 20px;
+    }
+
+    .premiossizar {
+        display: inline-block;
+        padding: 4px;
+        font-family: fonte2;
+        font-size: 13px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        margin: 3px;
+        color: #ff8a84;
+    }
+
+    .premiossizar:hover {
+        color: #000;
+        cursor: pointer;
+    }
+
+    #iconsiza {
+        width: 35px;
+        margin-left: 8%;
+        background-color: #ff8a84;
+        margin-bottom: -40px;
+        z-index: 3;
+        position: relative;
+    }
+
+    #iconsiza:hover {
+        cursor: pointer;
+        background-color: #000;
+    }
+
+    .prsizar {
+        display: none;
+    }
+
+    #prsizar1 {
+        display: block;
+    }
+}
+
+@media(max-width: 700px) {
+    /*Geral*/
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .parquitetos {
+        font-size: 12px;
+    }
+
+    .colunasleves p {
+        font-size: 12px;
+    }
+
+    .destaqueleve {
+        width: 92%;
+    }
+
+    .destaque {
+        width: 92%;
+    }
+
+    #titulo span {
+        font-size: 11px;
+    }
+
+    .linksetas {
+        width: 40px;
+    }
+
+    /*Menu*/
+    #iconmenu {
+        right: 30px;
+        padding: 15px;
+        top: -1px;
+        position: fixed;
+        display: block;
+        right: 0;
+    }
+
+    .linhamenu {
+        width: 20px;
+        height: 2px;
+        margin-bottom: 4px;
+    }
+
+    /*Capa*/
+    #quote {
+        width: 365px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #citacao {
+        font-size: 20px;
+    }
+
+    /*Timeline*/
+    .infotimeline {
+        font-size: 10px;
+    }
+
+    #timeline {
+        display: none;
+    }
+
+    #infotimelinetodos {
+        display: none;
+    }
+
+    table {
+        display: block;
+        width: 92%;
+        margin: auto;
+    }
+
+    .fichatecnica {
+        width: 100%;
+    }
+
+    table img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    #tabela2 td {
+        width: 10%;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .tdtexto {
+        width: 23%;
+    }
+
+    /*Serralves*/
+    .listaserralves div {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .filabotoes p {
+        font-size: 13px;
+    }
+
+    /*Footer*/
+    #quotefooter {
+        font-size: 15px;
+    }
+
+    #quotefim {
+        font-size: 12px;
+        border: 1px solid #ff8a84;
+    }
+
+    #casahistorias {
+        background-image: url(imagens/casa_das_historias2.jpg);
+    }
+
+    #mercado {
+        background-image: url(imagens/mercado_municipal2.jpg);
+    }
+
+    .textotabela {
+        font-size: 11px;
+    }
+
+    .infotabela {
+        font-size: 11px;
+    }
+
+    .subtitulotabela {
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 600px) {
+    .destaque {
+        width: 92%;
+    }
+
+    .destaqueleve {
+        width: 92%;
+    }
+
+    .coluna3arquitetos {
+        height: 300px;
+    }
+
+    .coluna1arquitetos {
+        height: 285px;
+    }
+
+    .vazio {
+        height: 80px;
+    }
+}
+
+@media(max-width:500px) {
+    .colunasleves {
+        column-count: 1;
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+    }
+
+    .coluna1arquitetos {
+        width: 93%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .coluna3arquitetos {
+        width: 93%;
+        height: auto;
+        padding-bottom: 30px;
+        float: left;
+    }
+
+    h3 {
+        text-align: left;
+        color: #ff8a84;
+    }
+
+    /*Capa*/
+    #autor {
+        color: #000;
+    }
+
+    /*Timeline*/
+    table {
+        display: none;
+    }
+
+    #tabela2 {
+        display: block;
+    }
+
+    /*Categorias*/
+    #coluna1 {
+        width: 100%;
+    }
+
+    #coluna1 div {
+        -webkit-column-count: 1 !important;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1 !important;
+        /* Firefox */
+        column-count: 1 !important;
+    }
+
+    /*GERACOES*/
+    #coluna2 {
+        float: left;
+        width: 100%;
+    }
+
+    #coluna2 div {
+        -webkit-column-count: 1 !important;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1 !important;
+        /* Firefox */
+        column-count: 1 !important;
+    }
+
+    /*Serralves*/
+    .botoesser {
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .pagser {
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+        height: 200px;
+    }
+
+    /*Carrilho*/
+    .colunascarrilho {
+        height: auto !important;
+    }
+
+    /*Mercado*/
+    .botoesmer {
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .pagmer {
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+        height: 230px;
+    }
+
+    /*Botoes siza+sm*/
+    .botoesesq2 {
+        float: right;
+        display: inline-block;
+        width: 7%;
+        margin-top: 40px;
+    }
+
+    .botoesbio {
+        font-size: 13px;
+        margin: 0;
+        padding-bottom: 15px;
+        width: 20px;
+        text-align: right;
+    }
+
+    .botoesdir {
+        display: none;
+    }
+
+    .botoesdir2 {
+        float: right;
+        display: inline-block;
+        margin-top: 20px;
+        width: 7%;
+    }
+
+    .botoesobra {
+        font-size: 13px;
+        margin: 0;
+        padding-bottom: 15px;
+        background-color: #fff;
+        width: 20px;
+        text-align: right;
+    }
+
+    .botoesdir {
+        display: none;
+    }
+
+    .botoesesq {
+        display: none;
+    }
+
+    .botoeslin {
+        font-size: 13px;
+        margin: 0;
+        padding-bottom: 15px;
+        background-color: #fff;
+        width: 20px;
+        text-align: right;
+    }
+
+    .botoescar {
+        font-size: 13px;
+        margin: 0;
+        padding-bottom: 15px;
+        background-color: #fff;
+        width: 20px;
+        text-align: right;
+    }
+}
+
+@media(max-width:420px) {
+    #titulo {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    #titulo span {
+        font-size: 10px;
+    }
+
+    .linhamenu {
+        width: 15px;
+        margin-bottom: 3px;
+    }
+
+    #iconmenu {
+        padding: 18px;
+    }
+
+    #citacao {
+        font-size: 16px;
+    }
+
+    #autor {
+        font-size: 11px;
+    }
+
+    #quote {
+        width: 290px;
+        margin-top: 150px;
+    }
+
+    #capa {
+        max-height: 350px;
+        background-size: 400px;
+    }
+
+    .linksetas {
+        width: 30px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .colunasleves p {
+        font-size: 11px;
+    }
+
+    .parquitetos {
+        font-size: 12px;
+    }
+
+    .botoesser {
+        font-size: 11px;
+        letter-spacing: 0;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    .botoesmer {
+        font-size: 11px;
+        letter-spacing: 0;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+}
+
+@media(max-height:500px) {
+    /*CATEGORIAS*/
+    #coluna1 {
+        width: 100%;
+    }
+
+    #coluna1 div {
+        -webkit-column-count: 2;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 2;
+        /* Firefox */
+        column-count: 2;
+        -webkit-column-gap: 40px;
+        /* Chrome, Safari, Opera */
+        -moz-column-gap: 40px;
+        /* Firefox */
+        column-gap: 40px;
+    }
+
+    /*GERACOES*/
+    #coluna2 {
+        float: left;
+        width: 100%;
+    }
+
+    #coluna2 div {
+        -webkit-column-count: 2;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 2;
+        /* Firefox */
+        column-count: 2;
+        -webkit-column-gap: 40px;
+        /* Chrome, Safari, Opera */
+        -moz-column-gap: 40px;
+        /* Firefox */
+        column-gap: 40px;
+    }
+
+    #arquitetosgeracoes {
+        margin-bottom: 0;
+    }
+
+    .vazio {
+        height: 80px;
+    }
+}
+
+@media(max-height:430px) {
+    #quote {
+        margin-top: 40vh;
+    }
+}
+
+@media(max-height:380px) {
+    #titulo span {
+        font-size: 11px;
+    }
+
+    .linhamenu {
+        width: 20px;
+        height: 2px;
+        margin-bottom: 4px;
+    }
+
+    #iconmenu {
+        right: 30px;
+        padding: 15px;
+        top: -1px;
+        position: fixed;
+        display: block;
+    }
+
+    .linksetas {
+        width: 25px;
+    }
+}
